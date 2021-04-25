@@ -66,7 +66,7 @@ export const MAJORS = [
 	},
 	{
 		name: ECARD_NAMES.WheelFortune, keywords: ['Chu kỳ', 'Thiên mệnh', 'Ngẫu nhiên', 'Thả lỏng', 'Tận hưởng'],
-		image: '10 whell-of-fortune'
+		image: '10 wheel-of-fortune'
 	},
 	{
 		name: ECARD_NAMES.Justice, keywords: ['Pháp luật', 'Tuân thủ', 'Tuyên án', 'Phân minh', 'Nhân quả'],
