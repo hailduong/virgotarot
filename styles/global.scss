@@ -1,0 +1,16 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Dosis:wght@200;500;800&display=swap');
+@import '~animate.css/source/_base.css';
+@import '~animate.css/source/_vars.css';
+@import '~animate.css/source/fading_entrances/fadeIn.css';
+@import '~animate.css/source/fading_entrances/fadeInLeft.css';
+@import '~animate.css/source/fading_entrances/fadeInRight.css';
+
+.animated {
+    animation-duration: 0.3s;
+}
+
+html, body, #__next, #__next > .container-fluid, main, .page {
+    height: 100%;
+    font-family: 'Dosis', sans-serif;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Lời Chúa Hằng Ngày",
+  "short_name": "Lời Chúa",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "Word of God",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000"
+}

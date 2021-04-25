@@ -1,0 +1,21 @@
+.word-of-god-card {
+    height: 600px;
+    color: #fff;
+
+    background: url('/images/background.jpg');
+    background-size: cover;
+
+    .word-of-god {
+        font-family: 'Dancing Script', cursive;
+        font-size: 24px;
+    }
+
+    .current-time {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 70px;
+        font-size: 22px;
+    }
+}
+
