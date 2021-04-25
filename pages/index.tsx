@@ -13,7 +13,7 @@ class Home extends React.PureComponent<any, any> {
 
 		return <div className="container-fluid">
 			<Head>
-				<title>Lời Chúa - Word Of God</title>
+				<title>Virgo Tarot</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>

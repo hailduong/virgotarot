@@ -6,7 +6,7 @@ function MasterLayout(props) {
 	return (
 	<div>
 		<div className={s.appName + ' text-center'}>
-			VIRGOTARROT
+			VIRGOTAROT
 		</div>
 		<div>
 			{children}
