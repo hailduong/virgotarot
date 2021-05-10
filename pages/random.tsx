@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
-import Home from '../components/Home'
 
-// import Random from '../components/Random'
 
-class RandomPage extends React.PureComponent<any, any> {
+import Random from '../components/Random'
+
+class Index extends React.PureComponent<any, any> {
 
 	constructor(props, context) {
 		super(props, context)
@@ -21,11 +21,11 @@ class RandomPage extends React.PureComponent<any, any> {
 			</Head>
 
 			<main>
-				<Home />
+				<Random />
 			</main>
 
 		</div>
 	}
 }
 
-export default RandomPage
+export default Index

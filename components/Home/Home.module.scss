@@ -1,0 +1,27 @@
+.home :global {
+    text-align: center;
+    .one {
+        text-align: center;
+        border-radius: 5px;
+        margin: 25px;
+        padding: 10px;
+        background: rgb(30,150,0);
+        background: linear-gradient(270deg, rgba(30,150,0,1) 0%, rgba(139,208,169,1) 50%, rgba(114,193,217,1) 100%);
+        box-shadow: 0 0 10px rgba(114,193,217,1);
+        color: #fff;
+
+        a{
+            color: #fff;
+        }
+    }
+
+    .title {
+        letter-spacing: 5px;
+    }
+
+    div.two {
+        font-size: 25px;
+        padding: 5px;
+    }
+
+}
