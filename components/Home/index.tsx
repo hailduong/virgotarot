@@ -1,5 +1,5 @@
-import s from './Home.module.scss'
 import MasterLayout from '../globals/MasterLayout'
+import s from './Home.module.scss'
 
 function Home() {
 
@@ -8,19 +8,19 @@ function Home() {
 		<MasterLayout>
 			<div className={s.home}>
 				<h1>Chọn chủ đề bạn đang vướng bận</h1>
-				<h5>Hãy hít thở nhẹ trước khi chọn bài nhé</h5>
-				<div className="one">
-					<h5 className="two">Sự nghiệp</h5>
-					<div>Lời khuyên cho sự nghiệp của bạn</div>
+				<div className="pageSubTitle">Hãy hít thở nhẹ trước khi chọn bài nhé</div>
+				<div className="box backgroundOrange">
+					<h5 className="boxTitle">Sự nghiệp</h5>
+					<div className="boxSubTitle">Lời khuyên cho sự nghiệp của bạn</div>
 				</div>
-				<div className="one">
-					<h5 className="two">Tình cảm</h5>
-					<div>Soi nghĩa, thấu hiểu những cảm nhận của bạn</div>
+				<div className="box backgroundPurple">
+					<h5 className="boxTitle">Tình cảm</h5>
+					<div className="boxSubTitle">Soi nghĩa, thấu hiểu những cảm nhận của bạn</div>
 				</div>
-				<div className="one">
+				<div className="box backgroundGreen">
 					<a href="/random">
-					<h5 className="two">Ngẫu nhiên</h5>
-					<div>Để sự tình cờ dẫn lối tới thông điệp vũ trụ</div>
+						<h5 className="boxTitle">Ngẫu nhiên</h5>
+						<div className="boxSubTitle">Để sự tình cờ dẫn lối tới thông điệp vũ trụ</div>
 					</a>
 				</div>
 			</div>

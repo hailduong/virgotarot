@@ -1,16 +1,60 @@
 .home :global {
     text-align: center;
-    .one {
+
+    h1 {
+        font-weight: 100;
+        margin-top: 24px;
+        font-size: 24px;
+    }
+
+    .pageSubTitle {
+        font-size: 13px;
+        margin-top: 16px;
+        font-weight: 100;
+    }
+
+    .box {
         text-align: center;
         border-radius: 5px;
         margin: 25px;
-        padding: 10px;
-        background: rgb(30,150,0);
-        background: linear-gradient(270deg, rgba(30,150,0,1) 0%, rgba(139,208,169,1) 50%, rgba(114,193,217,1) 100%);
-        box-shadow: 0 0 10px rgba(114,193,217,1);
-        color: #fff;
+        padding: 30px;
 
-        a{
+        box-shadow: 0 0 10px rgba(114, 193, 217, 1);
+        color: #fff;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.backgroundOrange {
+            background: #C6FFDD; /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        &.backgroundPurple {
+            background: #12c2e9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        &.backgroundGreen {
+            background: #11998e;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        .boxTitle {
+            font-weight: 700;
+            font-size: 20px;
+        }
+        .boxSubTitle {
+            font-size: 13px;
+        }
+
+        a {
             color: #fff;
         }
     }
