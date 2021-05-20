@@ -10,8 +10,10 @@ function Home() {
 				<h1>Chọn chủ đề bạn đang vướng bận</h1>
 				<div className="pageSubTitle">Hãy hít thở nhẹ trước khi chọn bài nhé</div>
 				<div className="box backgroundOrange">
-					<h5 className="boxTitle">Sự nghiệp</h5>
-					<div className="boxSubTitle">Lời khuyên cho sự nghiệp của bạn</div>
+					<a href={"/career"}>
+						<h5 className="boxTitle">Sự nghiệp</h5>
+						<div className="boxSubTitle">Lời khuyên cho sự nghiệp của bạn</div>
+					</a>
 				</div>
 				<div className="box backgroundPurple">
 					<h5 className="boxTitle">Tình cảm</h5>

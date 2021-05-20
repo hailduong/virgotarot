@@ -20,7 +20,7 @@ function Random() {
 				<div onClick={changeCard}>
 					<Card cardId={randomCard} />
 				</div>
-				<div><i>Các dự báo của tarrot không xa hơn 1 năm</i></div>
+				<div><i>Các dự báo của tarot không xa hơn 1 năm</i></div>
 			</div>
 		</MasterLayout>
 	)

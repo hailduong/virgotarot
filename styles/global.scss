@@ -14,3 +14,16 @@ html, body, #__next, #__next > .container-fluid, main, .page {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
+
+.dung{
+    text-align: center;
+}
+
+.upperCard {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
