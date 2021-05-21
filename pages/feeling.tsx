@@ -26,7 +26,7 @@ class Index extends React.PureComponent<any, any> {
 							<div><a href={"/"}>&lt;Trở về trang trước</a></div>
 							<div className={"endPage"}>Rút thêm</div>
 						</div>
-						<h1 className={"bigTitle"}>Sự nghiệp</h1>
+						<h1 className={"bigTitle"}>Tình cảm</h1>
 						<img src="/images/major/0 the-fool.png" alt="Tarot card"/>
 						<div className={"tarotCardNumber upperCard"}>0.</div>
 						<div className={"major upperCard"}>Chàng khờ</div>

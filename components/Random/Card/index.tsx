@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { memo } from 'react'
+import React, { memo } from 'react'
 import cardHelper from '../../helpers/cardHelper'
 
 type TProps = {
@@ -13,6 +13,10 @@ function Card(props: TProps) {
 	const positive = true
 	return (
 		<div className={'text-center'}>
+			<div className={"container"}>
+				<div><a href={"/"}>&lt;Trở về trang trước</a></div>
+				<div>Rút thêm</div>
+			</div>
 			<h2>{name}</h2>
 			<Image src={imagePath} alt="Tarot Card"
 				   width={300}

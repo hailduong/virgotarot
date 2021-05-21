@@ -16,8 +16,10 @@ function Home() {
 					</a>
 				</div>
 				<div className="box backgroundPurple">
+					<a href={"/feeling"}>
 					<h5 className="boxTitle">Tình cảm</h5>
 					<div className="boxSubTitle">Soi nghĩa, thấu hiểu những cảm nhận của bạn</div>
+					</a>
 				</div>
 				<div className="box backgroundGreen">
 					<a href="/random">

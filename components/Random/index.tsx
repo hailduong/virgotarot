@@ -16,7 +16,7 @@ function Random() {
 	return (
 		<MasterLayout>
 			<div className={'d-flex flex-column align-items-center'}>
-				<h1>Random</h1>
+				<h1 className={"bigTitle"}>Ngẫu nhiên</h1>
 				<div onClick={changeCard}>
 					<Card cardId={randomCard} />
 				</div>
