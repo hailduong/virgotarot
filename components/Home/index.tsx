@@ -1,5 +1,6 @@
 import MasterLayout from '../globals/MasterLayout'
 import s from './Home.module.scss'
+import React from "react";
 
 function Home() {
 
@@ -27,7 +28,9 @@ function Home() {
 						<div className="boxSubTitle">Để sự tình cờ dẫn lối tới thông điệp vũ trụ</div>
 					</a>
 				</div>
+				<div className={"footNote"}><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
 			</div>
+
 		</MasterLayout>
 	)
 }
