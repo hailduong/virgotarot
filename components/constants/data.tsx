@@ -130,7 +130,7 @@ export const MAJORS = [
 
 export const ALL_CARDS = [...MAJORS]
 
-export enum EMINOR_CARD_NAMES {
+export enum EMINOR_CUP_CARD_NAMES {
 	AceOfCups= 'Ace of Cups',
 	TwoOfCups= 'Two of Cups',
 	ThreeOfCups= 'Three of Cups',
@@ -149,73 +149,163 @@ export enum EMINOR_CARD_NAMES {
 
 export const CUPS = [
 	{
-		name: EMINOR_CARD_NAMES.AceOfCups,
+		name: EMINOR_CUP_CARD_NAMES.AceOfCups,
 		keywords: ['Rung động'],
 		image: 'ace-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.TwoOfCups,
+		name: EMINOR_CUP_CARD_NAMES.TwoOfCups,
 		keywords: ['Hội ngộ'],
 		image: 'two-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.ThreeOfCups,
+		name: EMINOR_CUP_CARD_NAMES.ThreeOfCups,
 		keywords: ['Hoà nhập'],
 		image: 'three-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.FourOfCups,
+		name: EMINOR_CUP_CARD_NAMES.FourOfCups,
 		keywords: ['Thoái trào'],
 		image: 'four-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.FiveOfCups,
+		name: EMINOR_CUP_CARD_NAMES.FiveOfCups,
 		keywords: ['Tiếc thương'],
 		image: 'five-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.SixOfCups,
+		name: EMINOR_CUP_CARD_NAMES.SixOfCups,
 		keywords: ['Hoài niệm'],
 		image: 'six-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.SevenOfCups,
+		name: EMINOR_CUP_CARD_NAMES.SevenOfCups,
 		keywords: ['Đa nhiệm'],
 		image: 'seven-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.EightOfCups,
+		name: EMINOR_CUP_CARD_NAMES.EightOfCups,
 		keywords: ['Buông bỏ'],
 		image: 'eight-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.NineOfCups,
+		name: EMINOR_CUP_CARD_NAMES.NineOfCups,
 		keywords: ['Thoả mãn'],
 		image: 'nine-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.TenOfCups,
+		name: EMINOR_CUP_CARD_NAMES.TenOfCups,
 		keywords: ['Tận hưởng'],
 		image: 'ten-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.PageOfCups,
+		name: EMINOR_CUP_CARD_NAMES.PageOfCups,
 		keywords: ['Thân thiện'],
 		image: '4 page-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.KnightOfCups,
+		name: EMINOR_CUP_CARD_NAMES.KnightOfCups,
 		keywords: ['Khai mở'],
 		image: '3 knight-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.QueenOfCups,
+		name: EMINOR_CUP_CARD_NAMES.QueenOfCups,
 		keywords: ['Trực giác'],
 		image: '2 queen-of-cups'
 	},
 	{
-		name: EMINOR_CARD_NAMES.KingOfCups,
+		name: EMINOR_CUP_CARD_NAMES.KingOfCups,
 		keywords: ['Điều tiết'],
 		image: '1 king of cups'
+	}
+]
+
+export enum EMINOR_SWORDS_CARD_NAMES {
+	AceOfSwords= 'Ace of Swords',
+	TwoOfSwords= 'Two of Swords',
+	ThreeOfSwords= 'Three of Swords',
+	FourOfSwords= 'Four of Swords',
+	FiveOfSwords= 'Five of Swords',
+	SixOfSwords= 'Six of Swords',
+	SevenOfSwords= 'Seven of Swords',
+	EightOfSwords= 'Eight of Swords',
+	NineOfSwords= 'Nine of Swords',
+	TenOfSwords= 'Ten of Swords',
+	PageOfSwords= 'Page of Swords',
+	KnightOfSwords= 'Knight of Swords',
+	QueenOfSwords= 'Queen of Swords',
+	KingOfSwords= 'King of Swords',
+}
+
+export const SWORDS = [
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.AceOfSwords,
+		keywords: ['Đột phá'],
+		image: 'ace-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.TwoOfSwords,
+		keywords: ['Cân nhắc'],
+		image: 'two-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.ThreeOfSwords,
+		keywords: ['Dứt khoát'],
+		image: 'three-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.FourOfSwords,
+		keywords: ['Nghỉ ngơi'],
+		image: 'four-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.FiveOfSwords,
+		keywords: ['Vị kỷ'],
+		image: 'five-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.SixOfSwords,
+		keywords: ['Tiễn đưa'],
+		image: 'six-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.SevenOfSwords,
+		keywords: ['Linh hoạt'],
+		image: 'seven-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.EightOfSwords,
+		keywords: ['Giới hạn'],
+		image: 'eight-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.NineOfSwords,
+		keywords: ['Trăn trở'],
+		image: 'nine-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.TenOfSwords,
+		keywords: ['Quên mình'],
+		image: 'ten-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.PageOfSwords,
+		keywords: ['Lý trí'],
+		image: 'page-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.KnightOfSwords,
+		keywords: ['Sắc sảo'],
+		image: '3 knight-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.QueenOfSwords,
+		keywords: ['Tầm nhìn'],
+		image: '2 queen-of-swords'
+	},
+	{
+		name: EMINOR_SWORDS_CARD_NAMES.KingOfSwords,
+		keywords: ['Quy chuẩn'],
+		image: '1 king of swords'
 	}
 ]
