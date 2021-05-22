@@ -19,7 +19,14 @@ export enum ECARD_NAMES {
 	Justice = 'Justice',
 	HangedMan = 'The Hanged Man',
 	Death = 'Death',
-	Temperance = 'Temperance'
+	Temperance = 'Temperance',
+	Devil = 'The Devil',
+	Tower = 'The Tower',
+	Star = 'The Star',
+	Moon = 'The Moon',
+	Sun = 'The Sun',
+	Judgement = 'Judgement',
+	World = 'The World'
 }
 
 export const MAJORS = [
@@ -83,6 +90,41 @@ export const MAJORS = [
 	{
 		name: ECARD_NAMES.Temperance, keywords: ['Trao đổi', 'Bí thuật', 'Giải pháp', 'Uyển chuyển', 'Từ Bi'],
 		image: '14 temperance'
+	},
+	{
+		name: ECARD_NAMES.Devil,
+		keywords: ['Trần trụi', 'Ràng buộc', 'Khao khát', 'Đổi chác', 'Nợ'],
+		image: '15 the-devil'
+	},
+	{
+		name: ECARD_NAMES.Tower,
+		keywords: ['Đổ vỡ', 'Biến cố', 'Đảo chiều', 'Trả giá', 'Chấp niệm'],
+		image: '16 the-tower'
+	},
+	{
+		name: ECARD_NAMES.Star,
+		keywords: ['Hi vọng', 'Phục hồi', 'Định vị', 'Âm thầm', 'Giải thoát'],
+		image: '17 the-star'
+	},
+	{
+		name: ECARD_NAMES.Moon,
+		keywords: ['Mờ ảo', 'Bí mật', 'Ẩn dụ', 'Tưởng tượng', 'Vô thức'],
+		image: '18 the-moon'
+	},
+	{
+		name: ECARD_NAMES.Sun,
+		keywords: ['Chiến thắng', 'Hiện hữu', 'Công nhận', 'Phát triển', 'Giải phóng'],
+		image: '19 the-sun'
+	},
+	{
+		name: ECARD_NAMES.Judgement,
+		keywords: ['Ghi nhận', 'Thanh thản', 'Quyết định', 'Tái sinh', 'Nghiệp'],
+		image: '20 judgement'
+	},
+	{
+		name: ECARD_NAMES.World,
+		keywords: ['Hoàn thành', 'Nhịp nhàng', 'Tri kỷ', 'Du hành', 'Thoát tục'],
+		image: '21 the-world'
 	},
 ]
 
