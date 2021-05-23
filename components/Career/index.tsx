@@ -1,5 +1,4 @@
 import React from "react";
-import { memo, useState } from 'react'
 
 function Career() {
     return (
@@ -21,4 +20,4 @@ function Career() {
     );
 }
 
-export default memo(Career)
+export default Career
