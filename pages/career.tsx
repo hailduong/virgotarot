@@ -23,8 +23,8 @@ class Index extends React.PureComponent<any, any> {
 				<MasterLayout>
 					<div className="dung">
 						<div className={"container"}>
-							<div><a href={"/"}>&lt;Trở về trang trước</a></div>
-							<div className={"endPage"}>Rút thêm</div>
+							<div className={"navigation"}><a href={"/"}>&lt;Chọn chủ đề</a></div>
+							<div className={"endPage navigation"}>Rút thêm</div>
 						</div>
 						<h1 className={"bigTitle"}>Sự nghiệp</h1>
 						<img src="/images/major/0 the-fool.png" alt="Tarot card"/>
@@ -32,7 +32,7 @@ class Index extends React.PureComponent<any, any> {
 						<div className={"major upperCard"}>Chàng khờ</div>
 						<div className={"minor"}>Tôi hào hứng với những cơ hội</div>
 						<div className={"minor endPage"}>Tôi muốn ra khỏi vùng an toàn</div>
-						<div><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
+						<div className={"minor footNote1"}><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
 					</div>
 				</MasterLayout>
 			</main>

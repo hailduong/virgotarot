@@ -21,11 +21,22 @@ html, body, #__next, #__next > .container-fluid, main, .page {
 
 .upperCard {
     font-weight: bold;
+    font-size: 24px;
+}
+
+.minor {
+    font-size: 24px;
+    font-style: italic;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
+    font-size: 20px;
+}
+
+.navigation {
+    margin-top: 30px;
 }
 
 .endPage {
@@ -34,5 +45,17 @@ html, body, #__next, #__next > .container-fluid, main, .page {
 
 .bigTitle {
     font-weight: 10;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: -5px;
+}
+
+img {
+    height: 680px;
+    width: 400px;
+}
+
+.footNote1 {
+    margin-top: 345px;
 }
