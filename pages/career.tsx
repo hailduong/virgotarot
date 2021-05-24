@@ -3,16 +3,16 @@ import React from 'react'
 import MasterLayout from "../components/globals/MasterLayout";
 import Card from "../components/Random/Card";
 
-class Index extends React.PureComponent<any, any> {
+/*class Index extends React.PureComponent<any, any> {
 
 	constructor(props, context) {
 		super(props, context)
 	}
 
-	render() {
+	render() {*/
 
-
-		return <div className="container-fluid">
+function Index(props){
+		return (<div className="container-fluid">
 			<Head>
 				<title>Virgo Tarot</title>
 				<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -38,7 +38,7 @@ class Index extends React.PureComponent<any, any> {
 			</main>
 
 		</div>
-	}
+		)
 }
 
 export default Index
