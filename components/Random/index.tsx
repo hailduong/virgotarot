@@ -2,14 +2,15 @@ import { memo, useState } from 'react'
 import MasterLayout from '../globals/MasterLayout'
 import cardHelper from '../helpers/cardHelper'
 import Card from './Card'
+import {NUMBER_OF_ALL_CARDS} from "../constants/data";
 
 function Random() {
 
-	const initialCard = cardHelper.getRandomCardId(0, 14)
+	const initialCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 	const [randomCard, setRandomCard] = useState<number>(initialCard)
 
 	const changeCard = () => {
-		const randomCard = cardHelper.getRandomCardId(0, 14)
+		const randomCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 		setRandomCard(randomCard)
 	}
 
