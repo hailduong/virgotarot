@@ -32,7 +32,7 @@ class Index extends React.PureComponent<any, any> {
 						<div className={"major upperCard"}>Chàng khờ</div>
 						<div className={"minor"}>Tôi hào hứng với những cơ hội</div>
 						<div className={"minor endPage"}>Tôi muốn ra khỏi vùng an toàn</div>
-						<div><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
+						<div className={"minor footNote1"}><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
 					</div>
 				</MasterLayout>
 			</main>

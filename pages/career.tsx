@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import MasterLayout from "../components/globals/MasterLayout";
 import Card from "../components/Random/Card";
+import Career from "../components/Career"
 
 /*class Index extends React.PureComponent<any, any> {
 
@@ -21,19 +22,7 @@ function Index(props){
 
 			<main>
 				<MasterLayout>
-					<div className="dung">
-						<div className={"container"}>
-							<div><a href={"/"}>&lt;Trở về trang trước</a></div>
-							<div className={"endPage"}>Rút thêm</div>
-						</div>
-						<h1 className={"bigTitle"}>Sự nghiệp</h1>
-						<img src="/images/major/0 the-fool.png" alt="Tarot card"/>
-						<div className={"tarotCardNumber upperCard"}>0.</div>
-						<div className={"major upperCard"}>Chàng khờ</div>
-						<div className={"minor"}>Tôi hào hứng với những cơ hội</div>
-						<div className={"minor endPage"}>Tôi muốn ra khỏi vùng an toàn</div>
-						<div><i>*Các dự báo của tarot không xa hơn 1 năm</i></div>
-					</div>
+					<Career />
 				</MasterLayout>
 			</main>
 
