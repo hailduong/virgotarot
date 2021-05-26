@@ -48,19 +48,23 @@ export const MAJORS = [
     {
         name: EMAJOR_CARD_NAMES.HighPriestess,
         keywords: ['Quan sát', 'Chậm rãi', 'Yên tĩnh', 'Khoảng cách', 'Trực giác'],
-        image: '2 the-high-priestess'
+        image: '2 the-high-priestess',
+        possibility: EPossibility.POSSIBLY
     },
     {
         name: EMAJOR_CARD_NAMES.Empress, keywords: ['Dưỡng sinh', 'Thai nghén', 'Làm giàu', 'Từ bi', 'Đất mẹ'],
-        image: '3 the-empress'
+        image: '3 the-empress',
+        possibility: EPossibility.YES
     },
     {
         name: EMAJOR_CARD_NAMES.Emperor, keywords: ['Dục dưỡng', 'Cải tạo', 'Kỷ luật', 'Quyền lực', 'Công án'],
-        image: '4 the-emperor'
+        image: '4 the-emperor',
+        possibility: EPossibility.YES
     },
     {
         name: EMAJOR_CARD_NAMES.Hierophant, keywords: ['Niềm tin', 'Giáo dục', 'Truyền thống', 'Số đông', 'Đạo'],
-        image: '5 the-heirophant'
+        image: '5 the-heirophant',
+
     },
     {
         name: EMAJOR_CARD_NAMES.Lover, keywords: ['Đồng điệu', 'Rung động', 'Lựa chọn', 'Phước lành', ' Duyên'],

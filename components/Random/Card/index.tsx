@@ -13,10 +13,6 @@ function Card(props: TProps) {
 	const positive = true
 	return (
 		<div className={'text-center'}>
-			<div className={'container'}>
-				<div><a href={'/'}>&lt;Trở về trang trước</a></div>
-				<div>Rút thêm</div>
-			</div>
 			<h2 className={'mt-3'}>{name}</h2>
 			<Image src={imagePath} alt="Tarot Card"
 				   width={300}

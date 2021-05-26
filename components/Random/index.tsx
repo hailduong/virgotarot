@@ -1,4 +1,4 @@
-import { memo, useState } from 'react'
+import React, { memo, useState } from 'react'
 import MasterLayout from '../globals/MasterLayout'
 import cardHelper from '../helpers/cardHelper'
 import Card from './Card'
@@ -18,7 +18,11 @@ function Random() {
 		<MasterLayout>
 			<div className={'d-flex flex-column align-items-center'}>
 				<h1 className={"bigTitle"}>Ngẫu nhiên</h1>
-				<div onClick={changeCard}>
+				<div className={'container'}>
+					<div><a href={'/'}>&lt;Trở về trang trước</a></div>
+					<div><a href="#"onClick={changeCard}>Rút thêm</a></div>
+				</div>
+				<div>
 					<Card cardId={randomCard} />
 				</div>
 				<div><i>Các dự báo của tarot không xa hơn 1 năm</i></div>
