@@ -29,15 +29,21 @@ export enum EMAJOR_CARD_NAMES {
     World = 'The World'
 }
 
+export enum EPossibility  {
+    YES, NO, POSSIBLY
+}
+
 export const MAJORS = [
     {
         name: EMAJOR_CARD_NAMES.Fool,
         keywords: ['Khởi đầu', 'Tự do', 'Tinh khiết', 'Tính không', 'Vô thức'],
-        image: '0 the-fool'
+        image: '0 the-fool',
+        possibility: EPossibility.YES
     },
     {
         name: EMAJOR_CARD_NAMES.Magician, keywords: ['Kiến tạo', 'Tác lực', 'Định hướng', 'Nguyên nhân', 'Ý thức'],
-        image: '1 the-magician'
+        image: '1 the-magician',
+        possibility: EPossibility.YES
     },
     {
         name: EMAJOR_CARD_NAMES.HighPriestess,
