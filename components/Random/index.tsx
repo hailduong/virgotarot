@@ -9,10 +9,19 @@ function Random() {
 	const initialCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 	const [randomCard, setRandomCard] = useState<number>(initialCard)
 
+	let count=0;
+	const countClick = function (){
+		if (count< 4) {
+			count++;
+		} else return "Bạn đã rút hơn ba lá liên tục. Hãy bình tĩnh!";
+	}
 	const changeCard = () => {
 		const randomCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 		setRandomCard(randomCard)
+		countClick()
 	}
+
+
 
 	return (
 		<MasterLayout>
