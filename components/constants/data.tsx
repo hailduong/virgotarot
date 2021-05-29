@@ -495,7 +495,7 @@ export const PENTACLES = [
 	{
 		name: EMINOR_PENTACLES_CARD_NAMES.PageOfPentacles,
 		keywords: ['Chăm chỉ'],
-		image: '4 page-of-Pentacles', possibility: EPossibility.YES
+		image: '4 page-of-pentacles', possibility: EPossibility.YES
 	},
 	{
 		name: EMINOR_PENTACLES_CARD_NAMES.KnightOfPentacles,
