@@ -149,7 +149,7 @@ export const MAJORS = [
 	{
 		name: EMAJOR_CARD_NAMES.World,
 		keywords: ['Hoàn thành', 'Nhịp nhàng', 'Tri kỷ', 'Du hành', 'Thoát tục'],
-		image: '21 the-world',
+		image: '21 the world',
 		possibility: EPossibility.YES
 	},
 ]
@@ -330,7 +330,7 @@ export const SWORDS = [
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.KingOfSwords,
 		keywords: ['Quy chuẩn'],
-		image: '1 king of swords', possibility: EPossibility.POSSIBLY
+		image: '1 king-of-swords', possibility: EPossibility.POSSIBLY
 	}
 ]
 
@@ -420,7 +420,7 @@ export const WANDS = [
 	{
 		name: EMINOR_WANDS_CARD_NAMES.KingOfWands,
 			keywords: ['Dẫn dắt'],
-		image: '1 king of wands', possibility: EPossibility.POSSIBLY
+		image: '1 king-of-wands', possibility: EPossibility.POSSIBLY
 	}
 ]
 
@@ -510,7 +510,7 @@ export const PENTACLES = [
 	{
 		name: EMINOR_PENTACLES_CARD_NAMES.KingOfPentacles,
 		keywords: ['Điểm tựa'],
-		image: '1 king of pentacles', possibility: EPossibility.YES
+		image: '1 king-of-pentacles', possibility: EPossibility.YES
 	}
 ]
 
