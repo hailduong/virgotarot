@@ -190,12 +190,12 @@ export const CUPS = [
 	{
 		name: EMINOR_CUP_CARD_NAMES.FourOfCups,
 		keywords: ['Thoái trào'],
-		image: 'four-of-cups', possibility: EPossibility.YES
+		image: 'four-of-cups', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_CUP_CARD_NAMES.FiveOfCups,
 		keywords: ['Tiếc thương'],
-		image: 'five-of-cups', possibility: EPossibility.YES
+		image: 'five-of-cups', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_CUP_CARD_NAMES.SixOfCups,
@@ -205,12 +205,12 @@ export const CUPS = [
 	{
 		name: EMINOR_CUP_CARD_NAMES.SevenOfCups,
 		keywords: ['Đa nhiệm'],
-		image: 'seven-of-cups', possibility: EPossibility.YES
+		image: 'seven-of-cups', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_CUP_CARD_NAMES.EightOfCups,
 		keywords: ['Buông bỏ'],
-		image: 'eight-of-cups', possibility: EPossibility.YES
+		image: 'eight-of-cups', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_CUP_CARD_NAMES.NineOfCups,
@@ -230,7 +230,7 @@ export const CUPS = [
 	{
 		name: EMINOR_CUP_CARD_NAMES.KnightOfCups,
 		keywords: ['Khai mở'],
-		image: '3 knight-of-cups', possibility: EPossibility.YES
+		image: '3 knight-of-cups', possibility: EPossibility.POSSIBLY
 	},
 	{
 		name: EMINOR_CUP_CARD_NAMES.QueenOfCups,
@@ -270,12 +270,12 @@ export const SWORDS = [
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.TwoOfSwords,
 		keywords: ['Cân nhắc'],
-		image: 'two-of-swords', possibility: EPossibility.YES
+		image: 'two-of-swords', possibility: EPossibility.POSSIBLY
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.ThreeOfSwords,
 		keywords: ['Dứt khoát'],
-		image: 'three-of-swords', possibility: EPossibility.YES
+		image: 'three-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.FourOfSwords,
@@ -285,7 +285,7 @@ export const SWORDS = [
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.FiveOfSwords,
 		keywords: ['Vị kỷ'],
-		image: 'five-of-swords', possibility: EPossibility.YES
+		image: 'five-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.SixOfSwords,
@@ -295,22 +295,22 @@ export const SWORDS = [
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.SevenOfSwords,
 		keywords: ['Linh hoạt'],
-		image: 'seven-of-swords', possibility: EPossibility.YES
+		image: 'seven-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.EightOfSwords,
 		keywords: ['Giới hạn'],
-		image: 'eight-of-swords', possibility: EPossibility.YES
+		image: 'eight-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.NineOfSwords,
 		keywords: ['Trăn trở'],
-		image: 'nine-of-swords', possibility: EPossibility.YES
+		image: 'nine-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.TenOfSwords,
 		keywords: ['Quên mình'],
-		image: 'ten-of-swords', possibility: EPossibility.YES
+		image: 'ten-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.PageOfSwords,
@@ -320,20 +320,201 @@ export const SWORDS = [
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.KnightOfSwords,
 		keywords: ['Sắc sảo'],
-		image: '3 knight-of-swords', possibility: EPossibility.YES
+		image: '3 knight-of-swords', possibility: EPossibility.NO
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.QueenOfSwords,
 		keywords: ['Tầm nhìn'],
-		image: '2 queen-of-swords', possibility: EPossibility.YES
+		image: '2 queen-of-swords', possibility: EPossibility.POSSIBLY
 	},
 	{
 		name: EMINOR_SWORDS_CARD_NAMES.KingOfSwords,
 		keywords: ['Quy chuẩn'],
-		image: '1 king of swords', possibility: EPossibility.YES
+		image: '1 king of swords', possibility: EPossibility.POSSIBLY
 	}
 ]
 
-export const MINORS = [...CUPS, ...SWORDS]
+export enum EMINOR_WANDS_CARD_NAMES {
+	AceOfWands = 'Ace of Wands',
+	TwoOfWands = 'Two of Wands',
+	ThreeOfWands = 'Three of Wands',
+	FourOfWands = 'Four of Wands',
+	FiveOfWands = 'Five of Wands',
+	SixOfWands = 'Six of Wands',
+	SevenOfWands = 'Seven of Wands',
+	EightOfWands = 'Eight of Wands',
+	NineOfWands = 'Nine of Wands',
+	TenOfWands = 'Ten of Wands',
+	PageOfWands = 'Page of Wands',
+	KnightOfWands = 'Knight of Wands',
+	QueenOfWands = 'Queen of Wands',
+	KingOfWands = 'King of Wands',
+}
+
+export const WANDS = [
+	{
+		name: EMINOR_WANDS_CARD_NAMES.AceOfWands,
+		keywords: ['Kích hoạt'],
+		image: 'ace-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.TwoOfWands,
+		keywords: ['Kế hoạch'],
+		image: 'two-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.ThreeOfWands,
+		keywords: ['Dẫn lối'],
+		image: 'three-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.FourOfWands,
+		keywords: ['Ghi nhận'],
+		image: 'four-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.FiveOfWands,
+			keywords: ['Phát sinh'],
+		image: 'five-of-wands', possibility: EPossibility.NO
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.SixOfWands,
+			keywords: ['Nổi bật'],
+		image: 'six-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.SevenOfWands,
+			keywords: ['Đấu tranh'],
+		image: 'seven-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.EightOfWands,
+			keywords: ['Tăng tốc'],
+		image: 'eight-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.NineOfWands,
+			keywords: ['Phân tích'],
+		image: 'nine-of-wands', possibility: EPossibility.POSSIBLY
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.TenOfWands,
+			keywords: ['Hy sinh'],
+		image: 'ten-of-wands', possibility: EPossibility.NO
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.PageOfWands,
+			keywords: ['Sáng tạo'],
+		image: '4 page-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.KnightOfWands,
+			keywords: ['Thu hút'],
+		image: '3 knight-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.QueenOfWands,
+			keywords: ['Tự tin'],
+		image: '2 queen-of-wands', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_WANDS_CARD_NAMES.KingOfWands,
+			keywords: ['Dẫn dắt'],
+		image: '1 king of wands', possibility: EPossibility.POSSIBLY
+	}
+]
+
+export enum EMINOR_PENTACLES_CARD_NAMES {
+	AceOfPentacles = 'Ace of Pentacles',
+	TwoOfPentacles = 'Two of Pentacles',
+	ThreeOfPentacles = 'Three of Pentacles',
+	FourOfPentacles = 'Four of Pentacles',
+	FiveOfPentacles = 'Five of Pentacles',
+	SixOfPentacles = 'Six of Pentacles',
+	SevenOfPentacles = 'Seven of Pentacles',
+	EightOfPentacles = 'Eight of Pentacles',
+	NineOfPentacles = 'Nine of Pentacles',
+	TenOfPentacles = 'Ten of Pentacles',
+	PageOfPentacles = 'Page of Pentacles',
+	KnightOfPentacles = 'Knight of Pentacles',
+	QueenOfPentacles = 'Queen of Pentacles',
+	KingOfPentacles = 'King of Pentacles',
+}
+
+export const PENTACLES = [
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.AceOfPentacles,
+		keywords: ['Tiềm tàng'],
+		image: 'ace-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.TwoOfPentacles,
+		keywords: ['Duy trì'],
+		image: 'two-of-pentacles', possibility: EPossibility.POSSIBLY
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.ThreeOfPentacles,
+		keywords: ['Hợp tác'],
+		image: 'three-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.FourOfPentacles,
+		keywords: ['Giữ gìn'],
+		image: 'four-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.FiveOfPentacles,
+		keywords: ['Thiệt hại'],
+		image: 'five-of-pentacles', possibility: EPossibility.NO
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.SixOfPentacles,
+		keywords: ['Tương trợ'],
+		image: 'six-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.SevenOfPentacles,
+		keywords: ['Quan sát'],
+		image: 'seven-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.EightOfPentacles,
+		keywords: ['Tập trung'],
+		image: 'eight-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.NineOfPentacles,
+		keywords: ['Độc lập'],
+		image: 'nine-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.TenOfPentacles,
+		keywords: ['Tiếp nối'],
+		image: 'ten-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.PageOfPentacles,
+		keywords: ['Chăm chỉ'],
+		image: '4 page-of-Pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.KnightOfPentacles,
+		keywords: ['Vững vàng'],
+		image: '3 knight-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.QueenOfPentacles,
+		keywords: ['Nuôi dưỡng'],
+		image: '2 queen-of-pentacles', possibility: EPossibility.YES
+	},
+	{
+		name: EMINOR_PENTACLES_CARD_NAMES.KingOfPentacles,
+		keywords: ['Điểm tựa'],
+		image: '1 king of pentacles', possibility: EPossibility.YES
+	}
+]
+
+
+export const MINORS = [...CUPS, ...SWORDS, ...WANDS, ...PENTACLES]
 export const ALL_CARDS = [...MAJORS, ...MINORS]
 export const NUMBER_OF_ALL_CARDS = ALL_CARDS.length
