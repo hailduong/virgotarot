@@ -3,14 +3,14 @@ import MasterLayout from '../globals/MasterLayout'
 import cardHelper from '../helpers/cardHelper'
 import Card from './Card'
 import {NUMBER_OF_ALL_CARDS} from "../constants/data";
-
+let count =0
 function Random() {
 
 	const initialCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 	const [randomCard, setRandomCard] = useState<number>(initialCard)
 	const [overThree, setOverThree] = useState<boolean>(false)
 
-	let count =0
+
 	const changeCard = () => {
 		const randomCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 		setRandomCard(randomCard)
@@ -26,10 +26,9 @@ function Random() {
 				<h1 className={'bigTitle'}>Ngẫu nhiên</h1>
 				<div className={'container'}>
 					<div><a href={'/'}>&lt;Trở về trang trước</a></div>
-					<div>
-						<a href="#"onClick={changeCard}>Rút thêm</a>
-						{overThree ? <div className={'container notify-third-card'}>Bạn đã rút hơn 3 lá liên tục, bình tĩnh nhé!</div> : null}
-					</div>
+					<div><a href="#"onClick={changeCard}>Rút thêm</a></div>
+					{overThree ? <div className={'notify-third-card'}>Bạn đã rút hơn 3 lá liên tục, bình tĩnh nhé!</div> : null}
+
 				</div>
 				<div>
 					<Card cardId={randomCard} />
