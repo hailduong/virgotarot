@@ -8,28 +8,25 @@ function Random() {
 
 	const initialCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 	const [randomCard, setRandomCard] = useState<number>(initialCard)
+	const [overThree, setOverThree] = useState(false)
 
-	let count=0;
-	const countClick = function (){
-		if (count< 4) {
-			count++;
-		} else return "Bạn đã rút hơn ba lá liên tục. Hãy bình tĩnh!";
-	}
-	const changeCard = () => {
+	const changeCard = (count=0) => {
 		const randomCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 		setRandomCard(randomCard)
-		countClick()
+		setOverThree(count + 1),
+		(count>3) ? ((overThree) ?
+		<div className={'container notify-third-card'}>Bạn đã rút hơn 3 lá liên tục, bình tĩnh nhé!</div> : null) : null
 	}
-
-
 
 	return (
 		<MasterLayout>
 			<div className={'d-flex flex-column align-items-center'}>
-				<h1 className={"bigTitle"}>Ngẫu nhiên</h1>
+				<h1 className={'bigTitle'}>Ngẫu nhiên</h1>
 				<div className={'container'}>
 					<div><a href={'/'}>&lt;Trở về trang trước</a></div>
-					<div><a href="#"onClick={changeCard}>Rút thêm</a></div>
+					<div>
+						<a href="#"onClick={changeCard}>Rút thêm</a>
+					</div>
 				</div>
 				<div>
 					<Card cardId={randomCard} />
