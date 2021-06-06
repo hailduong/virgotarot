@@ -8,14 +8,16 @@ function Random() {
 
 	const initialCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 	const [randomCard, setRandomCard] = useState<number>(initialCard)
-	const [overThree, setOverThree] = useState(false)
+	const [overThree, setOverThree] = useState<boolean>(false)
 
-	const changeCard = (count=0) => {
+	let count =0
+	const changeCard = () => {
 		const randomCard = cardHelper.getRandomCardId(0, NUMBER_OF_ALL_CARDS)
 		setRandomCard(randomCard)
-		setOverThree(count + 1),
-		(count>3) ? ((overThree) ?
-		<div className={'container notify-third-card'}>Bạn đã rút hơn 3 lá liên tục, bình tĩnh nhé!</div> : null) : null
+		count++
+		if (count > 3){
+			setOverThree(true)
+		}
 	}
 
 	return (
@@ -26,6 +28,7 @@ function Random() {
 					<div><a href={'/'}>&lt;Trở về trang trước</a></div>
 					<div>
 						<a href="#"onClick={changeCard}>Rút thêm</a>
+						{overThree ? <div className={'container notify-third-card'}>Bạn đã rút hơn 3 lá liên tục, bình tĩnh nhé!</div> : null}
 					</div>
 				</div>
 				<div>
